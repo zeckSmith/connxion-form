@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form">
+            <h1>connexion</h1>
+            {% if messages %}
+            <div class="message-erro">
+                {% for message in messages %}
+                    <p class='erro' style="backgound: red">{{ user.username }} {{ message}} </p>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <form action="{% url "connexion" %}" method="post">
+                {% csrf_token %}
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password">
+                <button type='submit'>Se connecter</button>
+
+
+            </form>
+            <p class="link">Pas encore inscritt <a href="{% url "inscription" %}">S'inscrire</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
