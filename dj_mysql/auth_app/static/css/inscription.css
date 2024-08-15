@@ -1,0 +1,93 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body > .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 420px;
+}
+
+.form {
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    color: #fff;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ddd;
+}
+
+.helptext {
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+.link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

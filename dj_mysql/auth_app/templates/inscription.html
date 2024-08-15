@@ -1,17 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/inscription.css" %}">
     <title>Document</title>
-
     <style>
-        body{
-            background: #b4f5f7;
-            
+        .helptext{
+            display: none;
+        } 
+        ul{ 
+            display: none;
         }
     </style>
+
 </head>
+
 <body>
 
     <div class="container">
@@ -27,5 +33,14 @@
             </div>
         </div>
     </div>
+
+    {% comment %} <ul class="errorlist">
+        <li>This password is too short. It must contain at least 8 characters.</li>
+        <li>This password is too common.</li>
+        <li>This password is entirely numeric.</li>
+    </ul> {% endcomment %}
+
+
 </body>
+
 </html>
